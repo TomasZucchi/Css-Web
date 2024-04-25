@@ -1,0 +1,107 @@
+
+/**
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+	display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #83bcde;
+}
+
+.navbar-custom .nav-link {
+    color: black; 
+}
+
+.navbar-custom .nav-link:hover {
+    color: #4d4ddb; 
+}
+
+.carousel-container {
+    border: 2px solid #ddd; /* Borde delgado de color gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que el borde afecte el diseño */
+}
+
+.img1 {
+    width: 600px; 
+}
+.img3 {
+    width: 550px; 
+}
+footer {
+    text-align: center;    
+}
+
+footer li {
+    display: inline;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.tarjetas{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card a {
+    color: inherit; /* Utiliza el color heredado del texto */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.card{
+    margin: 10px; /* Añade espacio entre las tarjetas */
+    flex: 1; /* Para que las tarjetas ocupen el espacio disponible */
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    .card-group{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.custom-img{
+    width: 150px;
+    height: auto;
+}
+
+/* Estilo para posicionar "Python" y "Java" a la derecha */
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Coloca el menú a la derecha */
+    display: none;
+}
+
+/* Mostrar el menú al pasar el cursor sobre el submenu */
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Consulta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/formulario.css">
+    <link rel="stylesheet" href="../styles/index.css">
+	<link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+    <header>
+		<nav class="navbar navbar-expand-lg navbar-custom">
+			<div class="container-fluid">
+				<div class="d-flex align-items-center"> <!-- Contenedor para alinear elementos -->
+					<!-- Logo -->
+					<a class="navbar-brand" href="../index.html">
+						<img src="../icons/logo.svg" alt="Home" width="35" height="40">
+					</a>
+				</div>
+				<!-- Botón de toggler para dispositivos móviles -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Contenido del navbar a la derecha -->
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<!-- Menú de navegación -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+								<li class="dropdown-submenu">
+									<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programación y Testing</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+										<li><a class="dropdown-item" href="../python.html">Python</a></li>
+										<li><a class="dropdown-item" href="../java.html">Java</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="formularioDeConsultas.html">Consultas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="formularioDeInicioDeSesion.html">Iniciar sesión</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="formularioDeRegistro.html">Registrarse</a>
+						</li>
+					</ul>                   
+				</div>
+			</div>
+		</nav>  
+	</header>
+    <main>
+        <section>
+            <div class="mainFormularios">
+                <div class="tituloConsulta">
+                    <h3>
+                        Consulta
+                    </h3>
+                </div>
+                <div class="explicacionConsulta">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, facere sapiente libero consequuntur iusto obcaecati, exercitationem provident porro illum quis sit voluptatem amet ea atque!
+                    </span>
+                </div>
+                <form action="" method="post" target="_blank">
+                    <div class="casillaConsulta">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+        
+                        <label for="consulta"></label>
+                        <textarea name="consulta" id="consulta" cols="70" rows="5" placeholder="Ingrese su consulta"></textarea>
+                    </div>
+                    <div class="boton">
+                        <input type="submit" value="Enviar Consulta">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+		<div class="left-section">
+			<a href="">
+				<p>Facebook
+			<img src="../icons/facebook.svg" alt="Home" width="35" height="40"</i></a>
+			</p>
+			<a href="">
+				<p>Twitter
+			<img src="../icons/twitterx.svg" alt="Home" width="35" height="40"</i></a>
+			</p>
+			<a href="">
+				<p>Instagram
+			<img src="../icons/instagram.svg" alt="Home" width="35" height="40"</i></a>
+			</p>
+		</div>
+		<div class="middle-section">
+			<a class="navbar-brand" href="../index.html">
+			<img src="../icons/logo.svg" alt="Imagen">
+		</a>
+		</div>
+		<div class="right-section">
+			<!-- Espacio vacío -->
+		</div>
+	</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
