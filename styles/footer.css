@@ -1,12 +1,10 @@
 footer {
-    background-color: #83bcde;
+    background-color: #abcfe4;
     color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    bottom: 0;
     width: 100%; /* Asegura que el footer ocupe todo el ancho */
 }
 
