@@ -36,14 +36,12 @@ main {
     overflow: hidden; /* Evita que el borde afecte el diseño */
 }
 
-.img1-enlarge {
-    max-width: 2000px; /* Ajusta el tamaño de la imagen según sea necesario */
-    /* Otros estilos personalizados */
-}
-
-.img3-enlarge {
-    max-width: 2000px; /* Ajusta el tamaño de la imagen según sea necesario */
-    /* Otros estilos personalizados */
+.img1-enlarge, .img3-enlarge {
+    width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 2000px; /* Tamaño máximo de la imagen */
+    display: block; /* Asegura que las imágenes se comporten correctamente dentro de su contenedor */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 footer {
     text-align: center;    
