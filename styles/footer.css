@@ -1,3 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
 footer {
     background-color: #abcfe4;
     color: white;
@@ -6,6 +21,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    height: auto;
 }
 
 /* Estilo del texto a la izquierda */
@@ -36,6 +52,7 @@ footer a {
 
 .footer ul {
     padding: 20px;
+    list-style: none;
 }
 
 .left-section a:hover,
