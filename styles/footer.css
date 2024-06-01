@@ -29,21 +29,18 @@ footer {
     flex: 1;
 }
 
-
-
-footer a{
+footer a {
     text-decoration: none;
     color: black;
 }
 
-.footer ul{
+.footer ul {
     padding: 20px;
 }
+
 .left-section a:hover,
 .middle-section a:hover,
 .right-section a:hover {
     text-decoration: none;
     color: #4d4ddb;
 }
-
-

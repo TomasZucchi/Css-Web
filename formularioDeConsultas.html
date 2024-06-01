@@ -9,19 +9,10 @@
     <link rel="stylesheet" href="./styles/formulario.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <style>
-        .navbar-custom {
-            background-color: #6c757d !important;
-        }
-        .nav-link.cursos, 
-        .nav-link.consultas {
-            color: white;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-custom">
+        <nav class="navbar navbar-expand-lg navbar-customs">
             <div class="container-fluid">
                 <!-- Logo y búsqueda a la izquierda -->
                 <div class="d-flex align-items-center">
@@ -62,6 +53,10 @@
             </div>
         </nav>
     </header>
+    <br>
+    <br>
+    <br>
+    <br>
     <main>
         <section>
             <div class="mainFormularios">
@@ -74,7 +69,7 @@
                          obcaecati, exercitationem provident porro illum quis <br>
                           sit voluptatem amet ea atque!</span>
                 </div>
-                <form action="" method="post" target="_blank" onsubmit="return validateForm()">
+                <form action="" method="post" target="_blank" onsubmit="return validateFormconsulta()">
                     <div class="casillaConsulta">
                         <label for="email"></label>
                         <div class="input-group mb-2">
@@ -124,36 +119,6 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function validateForm() {
-            var email = document.getElementById("email").value;
-            var consulta = document.getElementById("consulta").value;
-            var isValid = true;
-
-            if (email === "") {
-                document.getElementById("emailError").innerHTML = "Por favor, ingrese su correo electrónico.";
-                document.getElementById("email").classList.add("is-invalid");
-                isValid = false;
-            } else {
-                document.getElementById("emailError").innerHTML = "";
-                document.getElementById("email").classList.remove("is-invalid");
-            }
-
-            if (consulta === "") {
-                document.getElementById("consultaError").innerHTML = "Por favor, ingrese su consulta.";
-                document.getElementById("consulta").classList.add("is-invalid");
-                isValid = false;
-            } else {
-                document.getElementById("consultaError").innerHTML = "";
-                document.getElementById("consulta").classList.remove("is-invalid");
-            }
-
-            if (isValid) {
-                alert("¡Formulario completado correctamente!");
-            }
-
-            return isValid;
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

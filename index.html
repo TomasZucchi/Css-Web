@@ -14,7 +14,7 @@
         <div class="rectangle"> 
             <img src="./icons/logo.svg" alt="Logo" class="icon"> 
             <p class="font-weight-bold">DIGITAL</p>
-            <form class="login-form" action="home.html" method="post" id="login" onsubmit="return validateForm()">
+            <form class="login-form" action="home.html" method="post" id="login" onsubmit="return validateFormsesion()">
                 <input id="anchor" type="hidden" name="anchor" value="">
                 <script>document.getElementById('anchor').value = location.hash;</script>
                 <input type="hidden" name="logintoken" value="WkYRpTTvO66JSAB7ZD7TWFsrD33yKeAO">
@@ -39,41 +39,5 @@
             </form>
         </div>
     </div>
-
-    <script>
-        function validateForm() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            var validUsername = "usuario@gmail.com";
-            var validPassword = "1234";
-
-            if (username === "") {
-                document.getElementById("usernameError").innerHTML = "Por favor, ingrese su nombre de usuario o correo electrónico.";
-                document.getElementById("username").classList.add("is-invalid");
-                return false;
-            } else {
-                document.getElementById("usernameError").innerHTML = "";
-                document.getElementById("username").classList.remove("is-invalid");
-            }
-
-            if (password === "") {
-                document.getElementById("passwordError").innerHTML = "Por favor, ingrese su contraseña.";
-                document.getElementById("password").classList.add("is-invalid");
-                return false;
-            } else {
-                document.getElementById("passwordError").innerHTML = "";
-                document.getElementById("password").classList.remove("is-invalid");
-            }
-
-            if (username === validUsername && password === validPassword) {
-                window.location.href = "home.html";
-                return false; // Evita el envío del formulario
-            } else {
-                document.getElementById("usernameError").innerHTML = "Credenciales incorrectas.";
-                document.getElementById("passwordError").innerHTML = "";
-                return false;
-            }
-        }
-    </script>
 </body>
 </html>

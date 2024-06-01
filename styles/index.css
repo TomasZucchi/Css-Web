@@ -13,8 +13,10 @@ header {
     z-index: 1000; /* Asegura que la barra de navegación esté por encima de todo */
 }
 
+
 main {
-    margin-top: 50px; /* Ajusta este valor para que coincida con la altura de tu barra de navegación */
+    margin-top: -60px; /* Ajusta el margen superior para que las imágenes estén justo encima de todo */
+    padding-top: 0;
 }
 
 #carouselExample {
@@ -246,4 +248,12 @@ footer a {
 .titulo-cursos::after {
     right: 0; /* Línea a la derecha */
     transform: translateY(-50%); /* Ajusta la posición verticalmente */
+}
+
+.navbar-customs {
+    background-color: #6c757d !important;
+}
+.nav-link.cursos, 
+.nav-link.consultas {
+    color: white;
 }

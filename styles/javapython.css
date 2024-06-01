@@ -1,0 +1,40 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn {
+    margin-top: 0px;
+}
+.course-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.course-info img {
+    max-width: 150px; /* Tamaño de la imagen */
+    margin-right: 10px;
+}
+.navbar-custom {
+    background-color: #6c757d !important;
+}
+.nav-link.cursos, 
+.nav-link.consultas {
+    color: white;
+}
+
+/* Estilo para posicionar "Python" y "Java" a la derecha */
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    top: 90%;
+    left: 0%; /* Coloca el menú a la derecha */
+    display: none;
+}
+
+/* Mostrar el menú al pasar el cursor sobre el submenu */
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
