@@ -135,40 +135,44 @@ function validateFormregister() {
     return false; // Para evitar que el formulario se envíe automáticamente
 }
 
-function validateFormsesion() {
+function validarInicioDeSesion(event) {
+
+    event.preventDefault();
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     var validUsername = "usuario@gmail.com";
     var validPassword = "1234";
+    var valid = true;
 
+    // Validar el nombre de usuario
     if (username === "") {
         document.getElementById("usernameError").innerHTML = "Por favor, ingrese su nombre de usuario o correo electrónico.";
         document.getElementById("username").classList.add("is-invalid");
-        return false;
+        valid = false;
     } else {
         document.getElementById("usernameError").innerHTML = "";
         document.getElementById("username").classList.remove("is-invalid");
     }
 
+    // Validar la contraseña
     if (password === "") {
         document.getElementById("passwordError").innerHTML = "Por favor, ingrese su contraseña.";
         document.getElementById("password").classList.add("is-invalid");
-        return false;
+        valid = false;
     } else {
         document.getElementById("passwordError").innerHTML = "";
         document.getElementById("password").classList.remove("is-invalid");
     }
 
-    if (username === validUsername && password === validPassword) {
-        window.location.href = "file:///C:/Users/tomas/OneDrive/Escritorio/Codo%20A%20Codo/Proyecto%20Java/home.html";
-        return false; // Evita el envío del formulario
-    } else {
+    // Verificar las credenciales si las validaciones anteriores son correctas
+    if (valid && username === validUsername && password === validPassword) {
+        window.location.href = "./home.html"; // Redirigir a home.html
+    } else if (valid) {
+        // Solo muestra error de credenciales si los campos no están vacíos
         document.getElementById("usernameError").innerHTML = "Credenciales incorrectas.";
         document.getElementById("passwordError").innerHTML = "";
-        return false;
     }
 }
-
 $(document).ready(function(){
     $('#carouselExample').carousel();
 });
