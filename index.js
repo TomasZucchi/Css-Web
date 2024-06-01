@@ -160,7 +160,7 @@ function validateFormsesion() {
     }
 
     if (username === validUsername && password === validPassword) {
-        window.location.href = "home.html";
+        window.location.href = "file:///C:/Users/tomas/OneDrive/Escritorio/Codo%20A%20Codo/Proyecto%20Java/home.html";
         return false; // Evita el envío del formulario
     } else {
         document.getElementById("usernameError").innerHTML = "Credenciales incorrectas.";
